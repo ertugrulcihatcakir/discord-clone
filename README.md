@@ -1,49 +1,43 @@
 # Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
 
-![Copy of Copy of Copy of Fullstack Twitter Clone (5)](https://github.com/AntonioErdeljac/next13-discord-clone/assets/23248726/14e25e4f-eb83-44dd-8b97-4f2666b89386)
 
+Özellikler:
 
-This is a repository for Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
+- Socket.io kullanarak gerçek zamanlı mesajlaşma
+- UploadThing kullanarak ekleri mesaj olarak gönderme
+- Tüm kullanıcılar için mesajları gerçek zamanlı olarak silme ve düzenleme
+- Metin, Ses ve Görüntülü Arama Kanalları Oluşturun
+- Üyeler arasında 1:1 görüşme
+- Üyeler arasında 1:1 video görüşmeleri
+- Üye yönetimi (Kick, Rol değiştirme Misafir / Moderatör)
+- Benzersiz davet bağlantısı oluşturma ve tam çalışan davet sistemi
+- 10'lu gruplar halinde mesajlar için sonsuz yükleme (tanstack/query)
+- Sunucu oluşturma ve özelleştirme
+- TailwindCSS ve ShadcnUI kullanarak güzel kullanıcı arayüzü
+- Tam duyarlılık ve mobil kullanıcı arayüzü
+- Açık / Koyu mod
+- Websocket geri dönüşü: Uyarılarla yoklama
+- Prisma kullanarak ORM
+- Planetscale kullanarak MySQL veritabanı
+- Katip ile Kimlik Doğrulama
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=ZbX4Ok9YX94)
+### Önkoşullar
 
-Features:
+**Node sürümü 18.x.x**
 
-- Real-time messaging using Socket.io
-- Send attachments as messages using UploadThing
-- Delete & Edit messages in real time for all users
-- Create Text, Audio and Video call Channels
-- 1:1 conversation between members
-- 1:1 video calls between members
-- Member management (Kick, Role change Guest / Moderator)
-- Unique invite link generation & full working invite system
-- Infinite loading for messages in batches of 10 (tanstack/query)
-- Server creation and customization
-- Beautiful UI using TailwindCSS and ShadcnUI
-- Full responsivity and mobile UI
-- Light / Dark mode
-- Websocket fallback: Polling with alerts
-- ORM using Prisma
-- MySQL database using Planetscale
-- Authentication with Clerk
-
-### Prerequisites
-
-**Node version 18.x.x**
-
-### Cloning the repository
+### Depoyu klonlama
 
 ```shell
 git clone https://github.com/AntonioErdeljac/next13-discord-clone.git
 ```
 
-### Install packages
+### Paketleri yükleyin
 
 ```shell
 npm i
 ```
 
-### Setup .env file
+### .env dosyasını kurun
 
 
 ```js
@@ -65,9 +59,9 @@ LIVEKIT_API_SECRET=
 NEXT_PUBLIC_LIVEKIT_URL=
 ```
 
-### Setup Prisma
+### Prisma'yı Kurun
 
-Add MySQL Database (I used PlanetScale)
+MySQL Veritabanı Ekleme (PlanetScale kullandım)
 
 ```shell
 npx prisma generate
@@ -75,13 +69,13 @@ npx prisma db push
 
 ```
 
-### Start the app
+### Uygulamayı başlatın
 
 ```shell
 npm run dev
 ```
 
-## Available commands
+## Mevcut komutlar
 
 Running commands with npm `npm run [command]`
 
